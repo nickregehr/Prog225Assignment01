@@ -84,5 +84,17 @@ namespace UnitTestWinForms
                 btnCheckThree.BackColor = Color.Green;
             }
         }
+
+        private void btnSum_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                int sum = Convert.ToInt32(txtOne.Text) + Convert.ToInt32(txtTwo.Text) + Convert.ToInt32(txtThree.Text);
+                lblSum.Text = sum.ToString();
+            } catch
+            {
+                MessageBox.Show("One or more text boxes are empty.");
+            }
+        }
     }
 }

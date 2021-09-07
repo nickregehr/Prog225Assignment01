@@ -37,6 +37,8 @@
             this.btnCheckOne = new System.Windows.Forms.Button();
             this.btnCheckTwo = new System.Windows.Forms.Button();
             this.btnCheckThree = new System.Windows.Forms.Button();
+            this.lblSum = new System.Windows.Forms.Label();
+            this.btnSum = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnOne
@@ -120,11 +122,32 @@
             this.btnCheckThree.UseVisualStyleBackColor = true;
             this.btnCheckThree.Click += new System.EventHandler(this.btnCheckThree_Click);
             // 
+            // lblSum
+            // 
+            this.lblSum.AutoSize = true;
+            this.lblSum.Location = new System.Drawing.Point(337, 87);
+            this.lblSum.Name = "lblSum";
+            this.lblSum.Size = new System.Drawing.Size(35, 13);
+            this.lblSum.TabIndex = 9;
+            this.lblSum.Text = "label1";
+            // 
+            // btnSum
+            // 
+            this.btnSum.Location = new System.Drawing.Point(304, 41);
+            this.btnSum.Name = "btnSum";
+            this.btnSum.Size = new System.Drawing.Size(75, 23);
+            this.btnSum.TabIndex = 10;
+            this.btnSum.Text = "Sum";
+            this.btnSum.UseVisualStyleBackColor = true;
+            this.btnSum.Click += new System.EventHandler(this.btnSum_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(493, 201);
+            this.Controls.Add(this.btnSum);
+            this.Controls.Add(this.lblSum);
             this.Controls.Add(this.btnCheckThree);
             this.Controls.Add(this.btnCheckTwo);
             this.Controls.Add(this.btnCheckOne);
@@ -153,6 +176,8 @@
         private System.Windows.Forms.Button btnCheckOne;
         private System.Windows.Forms.Button btnCheckTwo;
         private System.Windows.Forms.Button btnCheckThree;
+        private System.Windows.Forms.Label lblSum;
+        private System.Windows.Forms.Button btnSum;
     }
 }
 
