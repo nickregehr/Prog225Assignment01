@@ -41,6 +41,8 @@
             this.btnSum = new System.Windows.Forms.Button();
             this.btnForLoop = new System.Windows.Forms.Button();
             this.lblForLoop = new System.Windows.Forms.Label();
+            this.lblWhileLoop = new System.Windows.Forms.Label();
+            this.btnWhileLoop = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnOne
@@ -145,7 +147,7 @@
             // 
             // btnForLoop
             // 
-            this.btnForLoop.Location = new System.Drawing.Point(293, 114);
+            this.btnForLoop.Location = new System.Drawing.Point(12, 124);
             this.btnForLoop.Name = "btnForLoop";
             this.btnForLoop.Size = new System.Drawing.Size(75, 23);
             this.btnForLoop.TabIndex = 11;
@@ -156,17 +158,38 @@
             // lblForLoop
             // 
             this.lblForLoop.AutoSize = true;
-            this.lblForLoop.Location = new System.Drawing.Point(293, 153);
+            this.lblForLoop.Location = new System.Drawing.Point(34, 161);
             this.lblForLoop.Name = "lblForLoop";
             this.lblForLoop.Size = new System.Drawing.Size(35, 13);
             this.lblForLoop.TabIndex = 12;
             this.lblForLoop.Text = "label1";
+            // 
+            // lblWhileLoop
+            // 
+            this.lblWhileLoop.AutoSize = true;
+            this.lblWhileLoop.Location = new System.Drawing.Point(178, 161);
+            this.lblWhileLoop.Name = "lblWhileLoop";
+            this.lblWhileLoop.Size = new System.Drawing.Size(35, 13);
+            this.lblWhileLoop.TabIndex = 14;
+            this.lblWhileLoop.Text = "label1";
+            // 
+            // btnWhileLoop
+            // 
+            this.btnWhileLoop.Location = new System.Drawing.Point(156, 124);
+            this.btnWhileLoop.Name = "btnWhileLoop";
+            this.btnWhileLoop.Size = new System.Drawing.Size(75, 23);
+            this.btnWhileLoop.TabIndex = 13;
+            this.btnWhileLoop.Text = "While Loop";
+            this.btnWhileLoop.UseVisualStyleBackColor = true;
+            this.btnWhileLoop.Click += new System.EventHandler(this.btnWhileLoop_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(493, 201);
+            this.Controls.Add(this.lblWhileLoop);
+            this.Controls.Add(this.btnWhileLoop);
             this.Controls.Add(this.lblForLoop);
             this.Controls.Add(this.btnForLoop);
             this.Controls.Add(this.btnSum);
@@ -203,6 +226,8 @@
         private System.Windows.Forms.Button btnSum;
         private System.Windows.Forms.Button btnForLoop;
         private System.Windows.Forms.Label lblForLoop;
+        private System.Windows.Forms.Label lblWhileLoop;
+        private System.Windows.Forms.Button btnWhileLoop;
     }
 }
 

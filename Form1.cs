@@ -78,7 +78,7 @@ namespace UnitTestWinForms
             }
             else if (valueFromTxtBox <= 75000)
             {
-                btnCheckTwo.BackColor = Color.Yellow;
+                btnCheckThree.BackColor = Color.Yellow;
             } else
             {
                 btnCheckThree.BackColor = Color.Green;
@@ -105,6 +105,16 @@ namespace UnitTestWinForms
                 intAddition += i;
             }
             lblForLoop.Text = intAddition.ToString();
+        }
+
+        private void btnWhileLoop_Click(object sender, EventArgs e)
+        {
+            int intWhile = 10000;
+            while (intWhile >= -100)
+            {
+                intWhile -= 101;
+            }
+            lblWhileLoop.Text = intWhile.ToString();
         }
     }
 }
