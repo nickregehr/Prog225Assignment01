@@ -96,5 +96,15 @@ namespace UnitTestWinForms
                 MessageBox.Show("One or more text boxes are empty.");
             }
         }
+
+        private void btnForLoop_Click(object sender, EventArgs e)
+        {
+            int intAddition = 0;
+            for (int i = 0; i <= 1000; i++)
+            {
+                intAddition += i;
+            }
+            lblForLoop.Text = intAddition.ToString();
+        }
     }
 }

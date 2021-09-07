@@ -39,6 +39,8 @@
             this.btnCheckThree = new System.Windows.Forms.Button();
             this.lblSum = new System.Windows.Forms.Label();
             this.btnSum = new System.Windows.Forms.Button();
+            this.btnForLoop = new System.Windows.Forms.Button();
+            this.lblForLoop = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btnOne
@@ -125,15 +127,15 @@
             // lblSum
             // 
             this.lblSum.AutoSize = true;
-            this.lblSum.Location = new System.Drawing.Point(337, 87);
+            this.lblSum.Location = new System.Drawing.Point(394, 17);
             this.lblSum.Name = "lblSum";
-            this.lblSum.Size = new System.Drawing.Size(35, 13);
+            this.lblSum.Size = new System.Drawing.Size(28, 13);
             this.lblSum.TabIndex = 9;
-            this.lblSum.Text = "label1";
+            this.lblSum.Text = "Sum";
             // 
             // btnSum
             // 
-            this.btnSum.Location = new System.Drawing.Point(304, 41);
+            this.btnSum.Location = new System.Drawing.Point(313, 12);
             this.btnSum.Name = "btnSum";
             this.btnSum.Size = new System.Drawing.Size(75, 23);
             this.btnSum.TabIndex = 10;
@@ -141,11 +143,32 @@
             this.btnSum.UseVisualStyleBackColor = true;
             this.btnSum.Click += new System.EventHandler(this.btnSum_Click);
             // 
+            // btnForLoop
+            // 
+            this.btnForLoop.Location = new System.Drawing.Point(293, 114);
+            this.btnForLoop.Name = "btnForLoop";
+            this.btnForLoop.Size = new System.Drawing.Size(75, 23);
+            this.btnForLoop.TabIndex = 11;
+            this.btnForLoop.Text = "For Loop";
+            this.btnForLoop.UseVisualStyleBackColor = true;
+            this.btnForLoop.Click += new System.EventHandler(this.btnForLoop_Click);
+            // 
+            // lblForLoop
+            // 
+            this.lblForLoop.AutoSize = true;
+            this.lblForLoop.Location = new System.Drawing.Point(293, 153);
+            this.lblForLoop.Name = "lblForLoop";
+            this.lblForLoop.Size = new System.Drawing.Size(35, 13);
+            this.lblForLoop.TabIndex = 12;
+            this.lblForLoop.Text = "label1";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(493, 201);
+            this.Controls.Add(this.lblForLoop);
+            this.Controls.Add(this.btnForLoop);
             this.Controls.Add(this.btnSum);
             this.Controls.Add(this.lblSum);
             this.Controls.Add(this.btnCheckThree);
@@ -178,6 +201,8 @@
         private System.Windows.Forms.Button btnCheckThree;
         private System.Windows.Forms.Label lblSum;
         private System.Windows.Forms.Button btnSum;
+        private System.Windows.Forms.Button btnForLoop;
+        private System.Windows.Forms.Label lblForLoop;
     }
 }
 
