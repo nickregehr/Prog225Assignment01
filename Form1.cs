@@ -37,5 +37,14 @@ namespace UnitTestWinForms
         {
             txtThree.Text = rnd.Next(30000, 100001).ToString();
         }
+
+        private void btnCheckOne_Click(object sender, EventArgs e)
+        {
+            int valueFromTxtBox = Convert.ToInt32(txtOne.Text);
+            if (valueFromTxtBox <= 50)
+            {
+                btnCheckOne.BackColor = Color.Red;
+            }
+        }
     }
 }
