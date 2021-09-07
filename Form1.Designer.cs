@@ -108,6 +108,7 @@
             this.btnCheckTwo.TabIndex = 7;
             this.btnCheckTwo.Text = "Check";
             this.btnCheckTwo.UseVisualStyleBackColor = true;
+            this.btnCheckTwo.Click += new System.EventHandler(this.btnCheckTwo_Click);
             // 
             // btnCheckThree
             // 
